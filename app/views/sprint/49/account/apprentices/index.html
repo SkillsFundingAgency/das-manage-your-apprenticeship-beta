@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="apprentices-index" id="content" role="main" tabindex="-1">
+  <h1 class="heading-xlarge">Apprentices      </h1>
+
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h3 class="heading-medium">Add new apprentices</h3>
+            <p>Delegate a training provider to add new apprentices to your account.</p>
+            <a class="button" href="add-apprentice.html">Select a training provider</a>
+            <h3 class="heading-medium">In progress</h3>
+            <p>Review, edit, approve and add more apprentices to submissions you’ve already started.</p>
+            <a class="" href="cohort-review.html">View funding in progress</a>
+
+            <h3 class="heading-medium">Live apprenticeships</h3>
+            <p>Manage existing apprentices in the apprenticeship service.</p>
+            <a class="" href="/sprint/{{sprint}}/account/apprentices/manage-2">View live apprentices</a>        
+        </div>
+        <div class="column-one-third">
+<div id="tabs-container">
+              <ul class="tabs-menu">
+                <li class="current"><a href="#tab-1">Alerts</a></li>
+                <li><a href="#tab-2">Activity</a></li>
+              </ul>
+            <div id="tab-1" class="tab-content">
+
+
+            <div class="">
+            <p class="">Transfer offer (1)</p>
+                <p class="font-xsmall">You have a new transfer offer from a sending employer.</p>
+                <a href="/sprint/49/account/transfers/receive/offer-received-summary.html">Check details</a> <a href="#" class="dismiss">Dismiss <i class="fa fa-times"> </i></a></div>
+
+
+            <div class="">
+            <p class="">Transfer request (1)</p>
+                <p class="font-xsmall">You have a new transfer request from a receiving employer.</p>
+                <a href="/sprint/49/account/transfers/send/request-received-summary.html">Check details</a> <a href="#" class="dismiss">Dismiss <i class="fa fa-times"> </i></a></div>
+
+
+            <div>
+            <p class="">1 agreement needs to be signed</p><a href="/sprint/49/account/organisations/index">View agreements</a>
+                <a href="#" class="dismiss">Dismiss <i class="fa fa-times"> </i></a>
+
+            </div>
+                
+
+            <div>
+                <p class="">2 apprentice changes ready for approval</p><a href="/sprint/49/account/apprentices/manage-2">View changes</a>
+<a href="#" class="dismiss">Dismiss <i class="fa fa-times"> </i></a>                
+                </div>
+
+
+            <div>
+            <p class="">1 cohort request ready for approval</p><a href="/sprint/49/account/apprentices/cohort-review">View cohort</a>
+<a href="#" class="dismiss">Dismiss <i class="fa fa-times"> </i></a>                
+                </div>
+
+            </div>
+
+
+            <div id="tab-2" class="tab-content" style="display:none;">
+
+
+            <div class="timeline">
+
+            <div class="body">
+              <div><span style="">Today</span><br>1 transfer request<br><span style="">At 1:25pm</span><br><a href="/sprint/49/account/finance/failed-payments-2">See details</a></div>
+            </div>
+                
+            <div class="body">
+              <div><span style="">Today</span><br>1 levy transfer pending<br><span style="">At 1:25pm</span><br><a href="/sprint/49/account/finance/failed-payments-2">See details</a></div>
+            </div>
+            <div class="body hidden">
+              <div><span style="">Today</span><br>2 payments failed<br><span style="">At 1:25pm</span><br><a href="/sprint/49/account/finance/failed-payments-2">See details</a></div>
+            </div>
+
+            <div class="body">
+                <div><span style="">Yesterday</span><br>2 apprentice changes approved<br><span style="">At 3:34pm by Pete Kowalczyk</span><br><a href="/sprint/49/account/apprentices/manage-2">See details</a></div>
+            </div>
+
+            <div class="body">
+              <div><span style="">17 June 2018</span><br>2 apprentice changes requested <br><span style="">At 3.34pm by Acme Training ltd</span><br><a href="#" onclick="demoAlert('This link is coming soon')">See details</a></div>
+            </div>
+
+            <div class="body">
+              <div><span style="">15 June 2018</span><br>Cohort approved: Acme Training ltd<br><span style="">At 5:34pm by Sarah Thomson</span><br><a href="#" onclick="demoAlert('This link is coming soon')">See details</a></div>
+            </div>
+
+            <div class="body hidden">
+              <div><span style="">14 June 2018</span><br>Cohort request made<br><span style="">At 3:34pm by Acme Training ltd</span><br><a href="">See details</a></div>
+            </div>
+
+            <div class="body hidden">
+              <div><span style="">12 June 2018</span><br>Levy payment received <br><span style="">At 3:34pm</span><br><a href="">See details</a></div>
+            </div>
+
+            <div class="body">
+            <div><a href="/sprint/49/account/dashboard/activity-3.html">See all activity</a></div>
+
+            </div>
+
+            </div>
+
+
+
+        </div>
+        </div>            
+        </div>
+    </div>
+
+    
+</main>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Funding
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+<main class="apprentices-index" id="content" role="main" tabindex="-1">
+
+        <div class="hgroup">      <h1 class="heading-xlarge">Apprentices      </h1>
+        <p class="text">Apprentice home page.</p></div>
+
+    
+    <div class="grid-row">
+        <div class="column-third">
+            <h3 class="heading-medium">Add</h3>
+            <p>Add new apprentices.</p>
+            <button type="button" class="button">Add a new apprentice</button>
+        </div>
+        <div class="column-third">
+            <h3 class="heading-medium">Cohorts</h3>
+            <p>Handle groups of apprentices added.</p>
+       <a href="/sprint/{{sprint}}/account/apprentices/index">  
+                <div class="data purple">
+                  <h2 class="bold-large" >8</h2>
+                  <h2 class="bold-small" >Ready for review</h2>
+                </div>
+       </a>
+
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+
+               <div class="data purple">
+                  <h2 class="bold-large" >3</h2>
+                  <h2 class="bold-small" >With training providers</h2>
+                </div>
+      </a>
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+
+               <div class="data purple">
+                  <h2 class="bold-large">1</h2>
+                  <h2 class="bold-small">Draft</h2>
+                </div>
+            </a>
+        </div>
+        <div class="column-third">
+            <h3 class="heading-medium">Manage</h3>
+            <p>Handle existing apprentices in the system.</p>
+          <a href="/sprint/{{sprint}}/account/apprentices/manage-2">  
+                <div class="data pink">
+                  <h2 class="bold-large" >132</h2>
+                  <h2 class="bold-small" >Apprentices</h2>
+                </div>
+            </a>  
+            
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+
+                <div class="data pink">
+                  <h2 class="bold-large" >34</h2>
+                  <h2 class="bold-small" >Live</h2>
+                </div>
+            </a>                
+            <a href="/sprint/{{sprint}}/account/apprentices/index">  
+                <div class="data pink">
+                  <h2 class="bold-large" >66</h2>
+                  <h2 class="bold-small" >Stopped</h2>
+                </div>
+            </a>            
+        </div>
+    </div>
+    
+</main>
+{% endblock %}

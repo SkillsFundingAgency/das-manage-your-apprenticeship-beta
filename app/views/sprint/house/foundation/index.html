@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Sprint {{sprint}} - Dashboard
+{% endblock %}
+
+{% block inside_header %}
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+{% block after_header %}
+{% include "sprint/"+sprint+"/includes/header.html" %}
+{% endblock %}
+
+<main id="content" role="main" tabindex="-1">
+  
+
+        <div class="hgroup">
+    <h1 class="heading-xlarge">
+    Foundation
+  </h1>
+        
+    
+  <div class="text">
+    <p class="lede">
+Building blocks for any web based application
+    </p>
+  </div>
+    </div>    
+        
+
+    
+</main>
+{% endblock %}
